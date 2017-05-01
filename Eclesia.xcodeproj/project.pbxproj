@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		972D51861EB4B9090011FB49 /* SermonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972D51851EB4B9090011FB49 /* SermonViewController.swift */; };
+		972D518A1EB4EFDF0011FB49 /* SermonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972D51891EB4EFDF0011FB49 /* SermonCell.swift */; };
+		972D518C1EB6BB880011FB49 /* SermonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972D518B1EB6BB880011FB49 /* SermonModel.swift */; };
+		972D518E1EB779870011FB49 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972D518D1EB779870011FB49 /* NotesViewController.swift */; };
+		972D51901EB7799F0011FB49 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972D518F1EB7799F0011FB49 /* NewsViewController.swift */; };
+		972D51921EB779CE0011FB49 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972D51911EB779CE0011FB49 /* RequestViewController.swift */; };
+		972D51941EB77A0F0011FB49 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972D51931EB77A0F0011FB49 /* RecordingViewController.swift */; };
+		972D51BD1EB795500011FB49 /* Eclesia.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 972D51BC1EB795500011FB49 /* Eclesia.xcdatamodel */; };
+		972D51E31EB7AF2A0011FB49 /* MultiSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972D51E21EB7AF2A0011FB49 /* MultiSound.swift */; };
 		97A3912D1EB0F29000D78805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3912C1EB0F29000D78805 /* AppDelegate.swift */; };
-		97A3912F1EB0F29000D78805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3912E1EB0F29000D78805 /* ViewController.swift */; };
 		97A391321EB0F29000D78805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A391301EB0F29000D78805 /* Main.storyboard */; };
 		97A391341EB0F29000D78805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A391331EB0F29000D78805 /* Assets.xcassets */; };
 		97A391371EB0F29000D78805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A391351EB0F29000D78805 /* LaunchScreen.storyboard */; };
+		97A3913F1EB0F46500D78805 /* SeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3913E1EB0F46500D78805 /* SeriesViewController.swift */; };
+		97A391471EB10DD700D78805 /* SeriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A391461EB10DD700D78805 /* SeriesCell.swift */; };
+		97A391491EB13CB900D78805 /* Sermon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A391481EB13CB900D78805 /* Sermon.swift */; };
+		97A3914D1EB2527D00D78805 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3914C1EB2527D00D78805 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		972D51851EB4B9090011FB49 /* SermonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SermonViewController.swift; sourceTree = "<group>"; };
+		972D51891EB4EFDF0011FB49 /* SermonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SermonCell.swift; sourceTree = "<group>"; };
+		972D518B1EB6BB880011FB49 /* SermonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SermonModel.swift; sourceTree = "<group>"; };
+		972D518D1EB779870011FB49 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		972D518F1EB7799F0011FB49 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		972D51911EB779CE0011FB49 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		972D51931EB77A0F0011FB49 /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		972D51BC1EB795500011FB49 /* Eclesia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eclesia.xcdatamodel; sourceTree = "<group>"; };
+		972D51E21EB7AF2A0011FB49 /* MultiSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSound.swift; sourceTree = "<group>"; };
 		97A391291EB0F29000D78805 /* Eclesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eclesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A3912C1EB0F29000D78805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97A3912E1EB0F29000D78805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97A391311EB0F29000D78805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97A391331EB0F29000D78805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97A391361EB0F29000D78805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97A391381EB0F29000D78805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A3913E1EB0F46500D78805 /* SeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesViewController.swift; sourceTree = "<group>"; };
+		97A391461EB10DD700D78805 /* SeriesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesCell.swift; sourceTree = "<group>"; };
+		97A391481EB13CB900D78805 /* Sermon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sermon.swift; sourceTree = "<group>"; };
+		97A3914C1EB2527D00D78805 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +59,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		972D51951EB77A390011FB49 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97A3913E1EB0F46500D78805 /* SeriesViewController.swift */,
+				972D51851EB4B9090011FB49 /* SermonViewController.swift */,
+				972D518D1EB779870011FB49 /* NotesViewController.swift */,
+				972D518F1EB7799F0011FB49 /* NewsViewController.swift */,
+				972D51911EB779CE0011FB49 /* RequestViewController.swift */,
+				972D51931EB77A0F0011FB49 /* RecordingViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		972D51961EB77A5B0011FB49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				97A391481EB13CB900D78805 /* Sermon.swift */,
+				972D518B1EB6BB880011FB49 /* SermonModel.swift */,
+				97A391461EB10DD700D78805 /* SeriesCell.swift */,
+				97A3914C1EB2527D00D78805 /* NetworkService.swift */,
+				972D51891EB4EFDF0011FB49 /* SermonCell.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		972D51971EB77ADF0011FB49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97A3912C1EB0F29000D78805 /* AppDelegate.swift */,
+				97A391331EB0F29000D78805 /* Assets.xcassets */,
+				97A391381EB0F29000D78805 /* Info.plist */,
+				97A391351EB0F29000D78805 /* LaunchScreen.storyboard */,
+				972D51E21EB7AF2A0011FB49 /* MultiSound.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		97A391201EB0F29000D78805 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +115,11 @@
 		97A3912B1EB0F29000D78805 /* Eclesia */ = {
 			isa = PBXGroup;
 			children = (
-				97A3912C1EB0F29000D78805 /* AppDelegate.swift */,
-				97A3912E1EB0F29000D78805 /* ViewController.swift */,
+				972D51BC1EB795500011FB49 /* Eclesia.xcdatamodel */,
+				972D51961EB77A5B0011FB49 /* Model */,
 				97A391301EB0F29000D78805 /* Main.storyboard */,
-				97A391331EB0F29000D78805 /* Assets.xcassets */,
-				97A391351EB0F29000D78805 /* LaunchScreen.storyboard */,
-				97A391381EB0F29000D78805 /* Info.plist */,
+				972D51951EB77A390011FB49 /* Controller */,
+				972D51971EB77ADF0011FB49 /* Supporting Files */,
 			);
 			path = Eclesia;
 			sourceTree = "<group>";
@@ -136,8 +196,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A3912F1EB0F29000D78805 /* ViewController.swift in Sources */,
+				97A3914D1EB2527D00D78805 /* NetworkService.swift in Sources */,
+				972D51941EB77A0F0011FB49 /* RecordingViewController.swift in Sources */,
+				972D51921EB779CE0011FB49 /* RequestViewController.swift in Sources */,
+				97A391471EB10DD700D78805 /* SeriesCell.swift in Sources */,
 				97A3912D1EB0F29000D78805 /* AppDelegate.swift in Sources */,
+				972D51901EB7799F0011FB49 /* NewsViewController.swift in Sources */,
+				972D518C1EB6BB880011FB49 /* SermonModel.swift in Sources */,
+				972D51E31EB7AF2A0011FB49 /* MultiSound.swift in Sources */,
+				972D51BD1EB795500011FB49 /* Eclesia.xcdatamodel in Sources */,
+				97A391491EB13CB900D78805 /* Sermon.swift in Sources */,
+				972D518E1EB779870011FB49 /* NotesViewController.swift in Sources */,
+				972D51861EB4B9090011FB49 /* SermonViewController.swift in Sources */,
+				97A3913F1EB0F46500D78805 /* SeriesViewController.swift in Sources */,
+				972D518A1EB4EFDF0011FB49 /* SermonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +373,7 @@
 				97A3913D1EB0F29000D78805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

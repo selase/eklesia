@@ -1,26 +1,677 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tgl-kL-f7C">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="DQL-WA-Rca">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tgl-kL-f7C" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="TXb-9T-Jpc"/>
+                        <viewControllerLayoutGuide type="bottom" id="n1z-PM-A3n"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="As9-GL-Fex">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homebg" translatesAutoresizingMaskIntoConstraints="NO" id="4dp-jv-YA6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECLESIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifj-mi-0eg">
+                                <rect key="frame" x="116" y="387.5" width="144" height="49.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="41"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to an amazing family of peope who truly care" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LF6-O8-Lnn">
+                                <rect key="frame" x="57" y="419" width="254" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="QHM-ZC-HRl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDT-Xg-RO9">
+                                <rect key="frame" x="160" y="533" width="56" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="ENTER">
+                                    <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yOr-Tx-0PE" kind="presentation" id="tia-n3-o0F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4dp-jv-YA6" firstAttribute="top" secondItem="As9-GL-Fex" secondAttribute="top" id="4eV-7R-uvZ"/>
+                            <constraint firstItem="4dp-jv-YA6" firstAttribute="leading" secondItem="As9-GL-Fex" secondAttribute="leading" id="Aze-b3-lPg"/>
+                            <constraint firstItem="CDT-Xg-RO9" firstAttribute="top" secondItem="LF6-O8-Lnn" secondAttribute="bottom" constant="66" id="Azm-d8-rgm"/>
+                            <constraint firstAttribute="trailing" secondItem="4dp-jv-YA6" secondAttribute="trailing" id="JX3-Yu-OFt"/>
+                            <constraint firstItem="LF6-O8-Lnn" firstAttribute="top" secondItem="TXb-9T-Jpc" secondAttribute="bottom" constant="399" id="YmJ-l8-ZCn"/>
+                            <constraint firstItem="LF6-O8-Lnn" firstAttribute="leading" secondItem="As9-GL-Fex" secondAttribute="leadingMargin" constant="41" id="btW-CR-2eV"/>
+                            <constraint firstItem="Ifj-mi-0eg" firstAttribute="centerX" secondItem="As9-GL-Fex" secondAttribute="centerX" id="cnF-Qf-AYu"/>
+                            <constraint firstItem="LF6-O8-Lnn" firstAttribute="centerX" secondItem="As9-GL-Fex" secondAttribute="centerX" constant="-3.5" id="gZT-ge-a2s"/>
+                            <constraint firstItem="n1z-PM-A3n" firstAttribute="top" secondItem="4dp-jv-YA6" secondAttribute="bottom" id="lex-5K-f3j"/>
+                            <constraint firstItem="LF6-O8-Lnn" firstAttribute="top" secondItem="Ifj-mi-0eg" secondAttribute="bottom" constant="-18" id="rSQ-dg-fRR"/>
+                            <constraint firstItem="CDT-Xg-RO9" firstAttribute="centerX" secondItem="As9-GL-Fex" secondAttribute="centerX" id="slB-hA-Rep"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fS1-tr-tmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1471.2" y="-149.77511244377811"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="o7w-SM-wUj">
+            <objects>
+                <tabBarController id="yOr-Tx-0PE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kNh-dT-aym">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Kt6-O2-LEN" kind="relationship" relationship="viewControllers" id="vdG-iz-9Ha"/>
+                        <segue destination="Q1R-du-n7q" kind="relationship" relationship="viewControllers" id="fMk-yh-JCH"/>
+                        <segue destination="iLi-Zp-81R" kind="relationship" relationship="viewControllers" id="leL-EX-xgY"/>
+                        <segue destination="f8S-tq-S8c" kind="relationship" relationship="viewControllers" id="moO-mW-GVH"/>
+                        <segue destination="GdF-bA-t5Z" kind="relationship" relationship="viewControllers" id="63e-g7-v3I"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXx-18-mIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-590" y="-150"/>
+        </scene>
+        <!--Sermon Series-->
+        <scene sceneID="PRE-79-XXM">
+            <objects>
+                <tableViewController id="xPx-kW-RTm" customClass="SeriesViewController" customModule="Eclesia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="1NL-nT-tBN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="vsH-7k-Zzv">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="291"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Discipline of purposeful time management" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6k-kE-nHo">
+                                    <rect key="frame" x="8" y="8" width="179" height="165"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REDEEMING THE TIME" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQk-ib-YbD">
+                                    <rect key="frame" x="8" y="182" width="179" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SERMON SERIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU4-xG-ubX">
+                                    <rect key="frame" x="131" y="245" width="118" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Discipline of purposeful time management" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-48-SeU">
+                                    <rect key="frame" x="189" y="8" width="179" height="165"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PS. JOHN EGYIR-CROFFET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ln-TN-fpb">
+                                    <rect key="frame" x="10" y="200" width="171" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="10"/>
+                                    <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE DSICIPLINE OF JOYFULNESS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hws-Zq-s1O">
+                                    <rect key="frame" x="189" y="181" width="173" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PS. WAYNE WILSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbP-1o-oDc">
+                                    <rect key="frame" x="191" y="199" width="171" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="10"/>
+                                    <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeriesCell" rowHeight="70" id="tNm-mw-Cn6" customClass="SeriesCell" customModule="Eclesia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="319" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tNm-mw-Cn6" id="dzg-Hg-6iu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EMB-bW-k3f">
+                                            <rect key="frame" x="8" y="8" width="319" height="53.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i06-Sf-N1g">
+                                                    <rect key="frame" x="0.0" y="1.5" width="65" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="Dsh-d7-5j7"/>
+                                                        <constraint firstAttribute="height" constant="51" id="cF8-tv-5AU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mOG-4I-uLW">
+                                                    <rect key="frame" x="85" y="0.0" width="234" height="53.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ce-O8-WpW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="19"/>
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker's name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJX-y7-Oxr">
+                                                            <rect key="frame" x="0.0" y="19" width="84.5" height="13.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sermon Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8F-P6-nya">
+                                                            <rect key="frame" x="0.0" y="32.5" width="56.5" height="10"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvc-9v-Ns2">
+                                                            <rect key="frame" x="0.0" y="42.5" width="44.5" height="11"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="234" id="j3c-yV-CyQ"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mOG-4I-uLW" firstAttribute="leading" secondItem="i06-Sf-N1g" secondAttribute="trailing" constant="20" id="aUW-z3-d1L"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="EMB-bW-k3f" secondAttribute="bottom" id="EjZ-b1-dNY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="EMB-bW-k3f" secondAttribute="trailing" constant="40" id="Kds-lD-iOm"/>
+                                        <constraint firstItem="EMB-bW-k3f" firstAttribute="top" secondItem="dzg-Hg-6iu" secondAttribute="topMargin" id="dW2-bn-Qo9"/>
+                                        <constraint firstItem="EMB-bW-k3f" firstAttribute="leading" secondItem="dzg-Hg-6iu" secondAttribute="leadingMargin" id="f2c-cc-hpS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryLabel" destination="yvc-9v-Ns2" id="Knl-83-LIR"/>
+                                    <outlet property="seriesLabel" destination="8Ce-O8-WpW" id="sDy-Rf-7uh"/>
+                                    <outlet property="sermonDateLabel" destination="B8F-P6-nya" id="i1g-Yz-BEa"/>
+                                    <outlet property="speakerLabel" destination="iJX-y7-Oxr" id="1m4-Uq-WYp"/>
+                                    <outlet property="thumbnailImageView" destination="i06-Sf-N1g" id="7TS-fx-v5q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xPx-kW-RTm" id="fsd-8h-16L"/>
+                            <outlet property="delegate" destination="xPx-kW-RTm" id="3qe-XM-ULM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Sermon Series" id="1ig-NA-HrP"/>
+                    <connections>
+                        <segue destination="tLv-Cp-oap" kind="show" identifier="toSermon" id="0aE-1P-j2w"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66v-zU-lnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="-558"/>
+        </scene>
+        <!--Sermon View Controller-->
+        <scene sceneID="AIb-HI-HtP">
+            <objects>
+                <tableViewController id="L2l-u9-0RF" customClass="SermonViewController" customModule="Eclesia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" id="RV6-tb-PTE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="hfC-56-dls">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="248"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8z2-Yk-XdY">
+                                    <rect key="frame" x="0.0" y="-64" width="375" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Series Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR8-XC-72K">
+                                    <rect key="frame" x="8" y="204" width="280" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="06 Sermons |" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-Wf-y2k">
+                                    <rect key="frame" x="8" y="227" width="70" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="275 Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg5-8A-GwO">
+                                    <rect key="frame" x="81" y="227" width="70" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SermonCell" rowHeight="72" id="vut-qd-gtU" customClass="SermonCell" customModule="Eclesia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="276" width="375" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vut-qd-gtU" id="3Kq-o9-JTX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CXN-pF-K0g">
+                                            <rect key="frame" x="21" y="5" width="234" height="51"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gr2-1o-Xew">
+                                                    <rect key="frame" x="0.0" y="0.0" width="234" height="51"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sermon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olN-a4-711">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="18"/>
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker's name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9y-Jf-id4">
+                                                            <rect key="frame" x="0.0" y="18" width="84.5" height="14"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sermon Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4l-K1-lzj">
+                                                            <rect key="frame" x="0.0" y="32" width="56.5" height="10"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68e-AM-cuj">
+                                                            <rect key="frame" x="0.0" y="42" width="44.5" height="9"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="234" id="HPq-fJ-yES"/>
+                                                        <constraint firstItem="Y9y-Jf-id4" firstAttribute="centerY" secondItem="Gr2-1o-Xew" secondAttribute="centerY" id="LTp-tf-FJT"/>
+                                                        <constraint firstItem="68e-AM-cuj" firstAttribute="top" secondItem="Y9y-Jf-id4" secondAttribute="bottom" constant="10" id="iIL-uD-fhu"/>
+                                                        <constraint firstItem="I4l-K1-lzj" firstAttribute="top" secondItem="olN-a4-711" secondAttribute="bottom" constant="14" id="xZJ-7C-zUQ"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gr2-1o-Xew" firstAttribute="top" secondItem="CXN-pF-K0g" secondAttribute="top" id="sRi-Lk-Yjv"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CXN-pF-K0g" firstAttribute="top" secondItem="3Kq-o9-JTX" secondAttribute="topMargin" constant="-3" id="04f-gs-xPN"/>
+                                        <constraint firstItem="CXN-pF-K0g" firstAttribute="leading" secondItem="3Kq-o9-JTX" secondAttribute="leadingMargin" constant="13" id="EpI-Ex-QYj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="seriesLabel" destination="wR8-XC-72K" id="vF5-ec-vE4"/>
+                                    <outlet property="sermonCategory" destination="68e-AM-cuj" id="s5s-hS-IAe"/>
+                                    <outlet property="sermonDateLabel" destination="I4l-K1-lzj" id="bfh-AA-HtY"/>
+                                    <outlet property="sermonSpeaker" destination="Y9y-Jf-id4" id="Pco-aJ-E1e"/>
+                                    <outlet property="sermonTitle" destination="olN-a4-711" id="Chk-28-LtK"/>
+                                    <outlet property="thumbnailImageView" destination="8z2-Yk-XdY" id="FQh-ou-qLF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="L2l-u9-0RF" id="iAC-qv-MBs"/>
+                            <outlet property="delegate" destination="L2l-u9-0RF" id="lgd-6n-VdE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="d9v-WS-s14">
+                        <barButtonItem key="backBarButtonItem" systemItem="cancel" id="aV7-EX-GUd"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="sQG-9h-Yt2">
+                            <connections>
+                                <segue destination="6oc-ks-VP4" kind="unwind" unwindAction="cancelSermonViewControllerWithSegue:" id="HI4-14-T11"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBU-Qi-Mdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6oc-ks-VP4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="-558"/>
+        </scene>
+        <!--Notes View Controller-->
+        <scene sceneID="vWv-wV-a7c">
+            <objects>
+                <tableViewController id="3T2-bB-1F2" customClass="NotesViewController" customModule="Eclesia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xky-Mm-fYX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MNO-O2-Bwm">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MNO-O2-Bwm" id="J19-Ho-anI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3T2-bB-1F2" id="Cg0-Iz-hRB"/>
+                            <outlet property="delegate" destination="3T2-bB-1F2" id="kd0-UF-e95"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="JcW-wd-TeG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1M2-UN-VB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2297" y="194"/>
+        </scene>
+        <!--Recording View Controller-->
+        <scene sceneID="ZPW-9g-e81">
+            <objects>
+                <tableViewController id="c9c-gc-OBv" customClass="RecordingViewController" customModule="Eclesia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="f7g-2O-q3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="FHx-eb-nG3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeV-8p-G0O">
+                                    <rect key="frame" x="220" y="21" width="36" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="PLAY"/>
+                                    <connections>
+                                        <action selector="playTapped:" destination="c9c-gc-OBv" eventType="touchUpInside" id="aDC-wk-Os4"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZt-0a-tgs">
+                                    <rect key="frame" x="96" y="59" width="167" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlh-EM-4rk">
+                                    <rect key="frame" x="161" y="111" width="37" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="SAVE"/>
+                                    <connections>
+                                        <action selector="saveTapped:" destination="c9c-gc-OBv" eventType="touchUpInside" id="otu-K6-yKm"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="record_button" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-vY-g1U">
+                                    <rect key="frame" x="24" y="11" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play-botton" translatesAutoresizingMaskIntoConstraints="NO" id="aEN-Rm-AVk">
+                                    <rect key="frame" x="294" y="11" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXf-5S-CVW">
+                                    <rect key="frame" x="96" y="21" width="61" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="RECORD"/>
+                                    <connections>
+                                        <action selector="recordTapped:" destination="c9c-gc-OBv" eventType="touchUpInside" id="FHc-wC-aTH"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RECORDINGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCn-iq-0gF">
+                                    <rect key="frame" x="8" y="164" width="107" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordingCell" textLabel="957-Lv-vBL" style="IBUITableViewCellStyleDefault" id="EVn-up-pF5">
+                                <rect key="frame" x="0.0" y="213" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EVn-up-pF5" id="EED-Wd-wit">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="957-Lv-vBL">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c9c-gc-OBv" id="xgS-wb-oO6"/>
+                            <outlet property="delegate" destination="c9c-gc-OBv" id="5kn-6A-0q8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="aaG-7u-6vk"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="xZt-0a-tgs" id="pnk-rq-Uj5"/>
+                        <outlet property="playButton" destination="UeV-8p-G0O" id="zkw-HL-vNA"/>
+                        <outlet property="recordButton" destination="nXf-5S-CVW" id="MQD-km-jrS"/>
+                        <outlet property="saveButton" destination="hlh-EM-4rk" id="T2i-FL-WA8"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gl3-zB-8co" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3791" y="184"/>
+        </scene>
+        <!--SERMON-->
+        <scene sceneID="h3G-lo-g6L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kt6-O2-LEN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SERMON" image="Players" selectedImage="sermon" id="DfG-Fk-cI5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eOn-YO-Lsu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xPx-kW-RTm" kind="relationship" relationship="rootViewController" id="HL6-lz-iOH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOr-b2-9M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="-467.3163418290855"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wBK-KZ-bIu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tLv-Cp-oap" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b7i-l3-SHO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L2l-u9-0RF" kind="relationship" relationship="rootViewController" id="XD2-8u-G2n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYc-gi-0cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655" y="-558"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="6OV-fz-7IB">
+            <objects>
+                <tableViewController id="FZT-6x-L3t" customClass="NewsViewController" customModule="Eclesia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DaR-Sv-B1g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="toB-Wr-CJe">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="toB-Wr-CJe" id="M5C-qy-rSU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FZT-6x-L3t" id="ZSc-JN-Gbd"/>
+                            <outlet property="delegate" destination="FZT-6x-L3t" id="WVZ-IN-qj8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="rIq-hy-dx9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCp-TU-Xtt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="194"/>
+        </scene>
+        <!--NOTES-->
+        <scene sceneID="Js9-DU-75y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q1R-du-n7q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="NOTES" id="zx5-zr-oOT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8GA-PT-QdX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3T2-bB-1F2" kind="relationship" relationship="rootViewController" id="Fer-tv-qFV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9p-bn-Xkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="194"/>
+        </scene>
+        <!--Recording-->
+        <scene sceneID="FAN-Hq-Qmb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iLi-Zp-81R" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recording" id="KBc-jR-e06"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RGl-3l-mIY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c9c-gc-OBv" kind="relationship" relationship="rootViewController" id="eFR-hB-o5w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dM-Sw-isA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2956" y="184"/>
+        </scene>
+        <!--NEWS-->
+        <scene sceneID="78V-lh-frZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f8S-tq-S8c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="NEWS" id="G2M-KB-1QD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bUp-Vk-maK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FZT-6x-L3t" kind="relationship" relationship="rootViewController" id="1tx-Oa-7bh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ei-tL-i1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="208"/>
+        </scene>
+        <!--Request View Controller-->
+        <scene sceneID="CPw-Kj-rSn">
+            <objects>
+                <tableViewController id="fQw-9s-x6k" customClass="RequestViewController" customModule="Eclesia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tAR-Xv-EBy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ypc-Oh-W7K">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ypc-Oh-W7K" id="Odt-po-61P">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fQw-9s-x6k" id="lw2-m7-S8v"/>
+                            <outlet property="delegate" destination="fQw-9s-x6k" id="Edr-JF-asz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Y8n-7z-BPv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3A-um-7th" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="869"/>
+        </scene>
+        <!--REQUESTS-->
+        <scene sceneID="2oz-zj-T6x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GdF-bA-t5Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="REQUESTS" id="cgw-13-FnG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lhG-6K-F9j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fQw-9s-x6k" kind="relationship" relationship="rootViewController" id="wCa-MA-shr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptr-RU-Dti" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="869"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Players" width="30" height="30"/>
+        <image name="homebg" width="414" height="736"/>
+        <image name="play-botton" width="181" height="181"/>
+        <image name="record_button" width="300" height="300"/>
+        <image name="sermon" width="23" height="22"/>
+    </resources>
 </document>
